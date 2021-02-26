@@ -1,0 +1,630 @@
+main {
+  .whoarewe-block {
+    background-image: url(../img/10years.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
+
+    @include smd-block() {
+      background-image: none;
+    }
+    .container {
+      background-image: url(../img/two-bedroom-plan.png);
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: 100% 260%;
+
+      @include smd-block() {
+        background-position: 100% -50%;
+      }
+      @include sm-block() {
+        background-position: 100% 0%;
+      }
+    }
+
+    .text_block {
+      padding: 200px 0 250px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include smd-block() {
+        padding: 150px 0 150px 0;
+      }
+      @include sm-block() {
+        padding: 100px 0 100px 0;
+      }
+      @include xs-block() {
+        padding: 30px 0 100px 0;
+      }
+    }
+    .subtitle {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      color: #ff9900;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      color: #000000;
+      padding: 10px 0 30px 0;
+    }
+
+    .text {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+
+      color: #7c7c7c;
+    }
+  }
+  .stagesofwork {
+    z-index: -2;
+    background-color: #000000;
+
+    .subtitle {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      letter-spacing: 9.7px;
+      text-transform: uppercase;
+      color: #ff9900;
+      margin: 66px 0 30px 0;
+    }
+    .title {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+
+    .circle_wrapper {
+      display: flex;
+      margin-bottom: 120px;
+
+      @include sm-block() {
+        display: block;
+      }
+    }
+    .circle_block {
+      width: 110px;
+      height: 110px;
+      margin: 100px auto;
+
+      &__text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #ffffff;
+        position: absolute;
+        top: 132px;
+        width: 152%;
+        left: -30px;
+
+        @include smd-block() {
+          top: 105px;
+          width: 116%;
+          left: -7px;
+        }
+        @include sm-block() {
+          top: 132px;
+          width: 152%;
+          left: -30px;
+        }
+      }
+    }
+    .prec {
+      top: 17px;
+      position: relative;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+
+      color: #ffffff;
+
+      @include smd-block() {
+        font-size: 28px;
+      }
+      @include sm-block() {
+        font-size: 40px;
+      }
+    }
+
+    .col12 {
+      z-index: 0;
+    }
+
+    .circle {
+      position: relative;
+      top: 3px;
+      left: 3px;
+      text-align: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 100%;
+      background-color: #000000;
+
+      @include smd-block() {
+        top: 3px;
+        left: 3px;
+        width: 76px;
+        height: 76px;
+      }
+      @include sm-block() {
+        top: 3px;
+        left: 3px;
+
+        width: 110px;
+        height: 110px;
+      }
+    }
+
+    .active-border {
+      position: relative;
+      text-align: center;
+      width: 116px;
+      height: 116px;
+      border-radius: 100%;
+      background-color: #ffb800;
+
+      @include smd-block() {
+        width: 82px;
+        height: 82px;
+      }
+      @include sm-block() {
+        width: 116px;
+        height: 116px;
+      }
+    }
+
+    .percent10 {
+      background-image: linear-gradient(162deg, transparent 50%, #ffffff 50%),
+        linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    }
+    .percent20 {
+      background-image: linear-gradient(210deg, transparent 50%, #ffffff 50%),
+        linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    }
+    .percent30 {
+      background-image: linear-gradient(266deg, transparent 50%, #ffffff 50%),
+        linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    }
+    .percent40 {
+      background-image: linear-gradient(145deg, transparent 50%, #ffb800 50%),
+        linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    }
+    .percent50 {
+      background-image: linear-gradient(216deg, transparent 50%, #ffb800 50%),
+        linear-gradient(90deg, #ffffff 50%, transparent 50%);
+    }
+
+    .line {
+      position: relative;
+
+      &::after {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 185%;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        right: 102%;
+        top: 50%;
+
+        @include sm-block() {
+          display: none;
+        }
+      }
+    }
+    .line_rigth {
+      position: relative;
+
+      &::after {
+        z-index: -1;
+        content: "";
+        display: block;
+        width: 185%;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        left: 100%;
+        top: 50%;
+
+        @include sm-block() {
+          display: none;
+        }
+      }
+    }
+    .line_left {
+      position: relative;
+    }
+  }
+
+  .ourworks {
+    background-image: url(../img/two-bedroom-plan2.png);
+
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position: 32% 134%;
+    margin-top: 100px;
+
+    @include smd-block() {
+      background-position: 50% 25%;
+    }
+    span {
+      margin-left: 5px;
+    }
+
+    .subtitle {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      text-align: center;
+      letter-spacing: 9.7px;
+      text-transform: uppercase;
+      color: #ff9900;
+    }
+    .title {
+      margin: 0;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+    .portfolio-slider {
+      h1 {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+      }
+      p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+      .repair-time,
+      .square {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        margin-bottom: 10px;
+        color: #000000;
+
+        span {
+          font-weight: normal;
+          font-size: 20px;
+        }
+      }
+      .square {
+        margin-bottom: 20px;
+      }
+
+      .vertical-slider {
+        img {
+          width: 100px;
+          height: auto;
+        }
+      }
+
+      .navigate_panel {
+        height: 90px;
+        background: #ffb800;
+
+        @include sm-block() {
+          display: none;
+        }
+      }
+      .slick-slide img {
+        width: 100%;
+        height: auto;
+      }
+      .splide__arrow {
+        top: auto;
+        bottom: -10px;
+        background: rgba(83, 6, 6, 0);
+
+        svg {
+          fill: #ffffff;
+          width: 1.5em;
+          height: 1.5em;
+        }
+      }
+      .splide__arrow--prev {
+        left: auto;
+        right: 100px;
+      }
+      .splide__arrow--next {
+        right: 50px;
+      }
+      .splide__pagination {
+        left: 70%;
+        bottom: 25px;
+        z-index: 0;
+
+        @include sm-block() {
+          display: none;
+        }
+        button {
+          margin: 0 10px;
+        }
+      }
+      .splide__pagination__page {
+        background: #ffffff75;
+      }
+      .splide__pagination__page.is-active {
+        background: #ffffff;
+      }
+    }
+  }
+
+  .aboutus {
+    background-image: url(../img/aboutus_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+
+    &_blur {
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(26px);
+
+      background-image: url(../img/quotes.png);
+      background-repeat: no-repeat;
+      background-position: 90% 40%;
+    }
+    &__subtitle {
+      margin-top: 70px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 139.4%;
+      text-align: center;
+      letter-spacing: 9.7px;
+      text-transform: uppercase;
+      color: #ff9900;
+    }
+
+    &__title {
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 70px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 139.4%;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+      width: 75%;
+    }
+    &__text {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      width: 75%;
+      margin: 0 auto;
+    }
+    &__name {
+      margin-top: 30px;
+      margin-bottom: 250px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #ffffff;
+
+      @include md-block() {
+        margin-bottom: 150px;
+      }
+    }
+    .splide__arrow {
+      top: auto;
+      bottom: 24px;
+      background: rgba(83, 6, 6, 0);
+
+      svg {
+        fill: #ff9900;
+        width: 5em;
+        height: 5em;
+      }
+    }
+    .splide__arrow--prev {
+      left: 35%;
+    }
+    .splide__arrow--next {
+      right: 35%;
+    }
+    .splide__pagination {
+      bottom: 60px;
+      z-index: 0;
+
+      @include smd-block() {
+        display: none;
+      }
+      button {
+        margin: 0 10px;
+      }
+    }
+    .splide__pagination__page.is-active {
+      background: #ff9900;
+    }
+  }
+
+  .contactus {
+    .col6 {
+      @include size-smd(6);
+      @include size-xs(12);
+    }
+
+    background-color: #ffb800;
+    color: #ffffff;
+
+    &__title {
+      margin-top: 45px;
+      margin-bottom: 10px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.005em;
+      color: #ffffff;
+    }
+
+    input {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.07em;
+      color: rgba(255, 255, 255, 0.72);
+      padding-left: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom: 0.5px solid #ffffff;
+      margin-bottom: 40px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.72);
+      }
+    }
+    textarea:focus,
+    input:focus {
+      outline: none;
+    }
+    #btn {
+      margin-left: 10px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #ffb800;
+
+      padding: 12px 25px;
+      background: #ffffff;
+    }
+  }
+}
+
+#sync1 {
+  .item {
+    background: #0c83e7;
+    padding: 80px 0px;
+    margin: 5px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
+#sync2 {
+  .item {
+    background: #c9c9c9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .current .item {
+    background: #0c83e7;
+  }
+}
+
+.owl-theme {
+  .owl-nav {
+    /*default owl-theme theme reset .disabled:hover links */
+    [class*="owl-"] {
+      transition: all 0.3s ease;
+      &.disabled:hover {
+        background-color: #d6d6d6;
+      }
+    }
+  }
+}
+
+//arrows on first carousel
+#sync1.owl-theme {
+  position: relative;
+  .owl-next,
+  .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+  }
+  .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
+}

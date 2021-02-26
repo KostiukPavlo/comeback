@@ -1,0 +1,112 @@
+.footer {
+  .col1 {
+    @include size-sm(6);
+  }
+  .col3 {
+    @include size-smd(3);
+    @include size-sm(6);
+  }
+  .col5 {
+    @include size-sm(6);
+  }
+
+  @include smd-block() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #000000;
+
+  ul {
+    margin: 0;
+  }
+  .block_align {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    justify-content: space-between;
+
+    @include smd-block() {
+      margin-bottom: 70px;
+    }
+  }
+  &__logo {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+
+    letter-spacing: 0.07em;
+    color: #ff9900;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+    color: #ffffff;
+  }
+
+  nav {
+    li {
+      margin-bottom: 23px;
+      list-style: none;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+    }
+  }
+
+  .block_adress {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+
+  // &__adress {
+  //   margin-bottom: 80px;
+  // }
+
+  .footer_social {
+    text-align: right;
+
+    @include smd-block() {
+      text-align: left;
+    }
+    @include sm-block() {
+      padding-left: 40px;
+    }
+    img {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright {
+  background: #000000;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.29);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.29);
+  padding: 12px 0;
+}

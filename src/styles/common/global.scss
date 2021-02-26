@@ -1,0 +1,101 @@
+@import "../../local_modules/normalize.css/normalize";
+
+// @import "../../local_modules/skeleton_css/skeleton";
+
+@import "../../local_modules/smart-grid_sass/smart-grid.sass";
+
+@import "../utils/fonts";
+
+@import "../mixins/media";
+
+.container {
+  @include wrapper();
+}
+
+.row {
+  @include row-flex();
+}
+.col {
+  @include col();
+}
+.col1 {
+  @include col();
+  @include size(1);
+}
+.col2 {
+  @include col();
+  @include size(2);
+}
+.col2-4 {
+  @include col();
+  @include size(2.4);
+}
+.col3 {
+  @include col();
+  @include size(3);
+
+  @include size-smd(12);
+}
+.col4 {
+  @include col();
+  @include size(4);
+}
+.col5 {
+  @include col();
+  @include size(5);
+}
+.col6 {
+  @include col();
+  @include size(6);
+
+  @include size-smd(12);
+}
+.col7 {
+  @include col();
+  @include size(7);
+
+  @include size-md(12);
+}
+.col8 {
+  @include col();
+  @include size(8);
+}
+.col9 {
+  @include col();
+  @include size(9);
+}
+
+.col10 {
+  @include col();
+  @include size(10);
+}
+.col12 {
+  @include col();
+  @include size(12);
+}
+
+.aligncenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.center_block {
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}

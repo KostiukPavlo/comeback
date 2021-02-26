@@ -1,0 +1,302 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(../img/header_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+
+  @include sm-block() {
+    height: auto;
+    background-size: auto;
+  }
+  .head_line {
+    background: rgba(0, 0, 0, 0.31);
+  }
+  .head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 54px;
+
+    @include sm-block() {
+      justify-content: center;
+    }
+    &__tel {
+      margin-right: 45px;
+      @include sm-block() {
+        display: none;
+      }
+      a {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.015em;
+        color: #ffffff;
+      }
+    }
+    &__social {
+      display: flex;
+
+      .item {
+        margin-left: 20px;
+
+        @include sm-block() {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      @include smd-block() {
+        text-align: center;
+      }
+      a {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 80px;
+
+        letter-spacing: 0.07em;
+
+        color: #ff9900;
+      }
+    }
+
+    nav {
+      @include sm-block() {
+        display: none;
+      }
+      ul {
+        padding-inline-start: 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      li {
+        list-style: none;
+      }
+
+      a {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 80px;
+        letter-spacing: 0.07em;
+        color: #ffffff;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #ff9900;
+          border-bottom: 3px solid #ff9900;
+          padding-bottom: 7px;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    .ordercall {
+      display: flex;
+      justify-content: flex-end;
+
+      @include smd-block() {
+        justify-content: center;
+      }
+      @include sm-block() {
+        display: none;
+      }
+      a {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: #ff9900;
+        padding: 8px 12px;
+        border: 2px solid #ff9900;
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+  .baner {
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 70vh;
+
+    @include sm-block() {
+      height: auto;
+      width: 80%;
+    }
+    h1 {
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+
+      @include sm-block() {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      padding: 30px 0 60px 0;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    .btn {
+      background: #ff9900;
+      box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+      padding: 11px;
+      color: #ffffff;
+      transition: all 0.3s;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      @include sm-block() {
+        margin-bottom: 100px;
+      }
+      &:hover {
+        transition: all 0.3s;
+        box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.897);
+      }
+    }
+  }
+
+  .foot_line {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(26px);
+    padding: 30px 0;
+    margin-top: auto;
+
+    @include sm-block() {
+      display: none;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right;
+
+      min-height: 90px;
+
+      .text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #ffffff;
+        width: 90%;
+      }
+    }
+
+    .business {
+      background-image: url(../img/business.png);
+    }
+    .money-bag {
+      background-image: url(../img/money-bag.png);
+    }
+    .business-report {
+      background-image: url(../img/business-report.png);
+    }
+    .fast {
+      background-image: url(../img/fast.png);
+    }
+    .guarantee {
+      background-image: url(../img/guarantee.png);
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+
+    @include sm-block() {
+      display: block;
+      margin-top: 20px;
+    }
+    .topnav {
+      overflow: hidden;
+
+      position: relative;
+      text-align: center;
+    }
+    .ordercall {
+      display: flex;
+      flex-direction: column;
+      min-height: 70px;
+      position: relative;
+    }
+    #myLinks {
+      display: none;
+      margin-top: 15px;
+    }
+
+    a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+
+      color: #ffffff;
+    }
+
+    a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .active {
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #ff9900;
+      padding: 8px 12px;
+      border: 2px solid #ff9900;
+      margin: 0 auto;
+      &:hover {
+        background-color: rgba(221, 221, 221, 0);
+        color: #ff9900;
+      }
+    }
+  }
+}
