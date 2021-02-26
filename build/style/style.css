@@ -1,0 +1,1822 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Heavy.eot");
+  src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("../fonts/Gilroy/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-LightItalic.eot");
+  src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("../fonts/Gilroy/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-ThinItalic.eot");
+  src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("../fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ThinItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-BlackItalic.eot");
+  src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("../fonts/Gilroy/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-BoldItalic.eot");
+  src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("../fonts/Gilroy/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-BoldItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("../fonts/Gilroy/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-UltraLightItalic.eot");
+  src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("../fonts/Gilroy/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-SemiBoldItalic.eot");
+  src: local("Gilroy SemiBold Italic"), local("Gilroy-SemiBoldItalic"), url("../fonts/Gilroy/Gilroy-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-SemiBoldItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Light.eot");
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/Gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-MediumItalic.eot");
+  src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("../fonts/Gilroy/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.eot");
+  src: local("Gilroy ExtraBold Italic"), local("Gilroy-ExtraBoldItalic"), url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-HeavyItalic.eot");
+  src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("../fonts/Gilroy/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-HeavyItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-RegularItalic.eot");
+  src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("../fonts/Gilroy/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-UltraLight.eot");
+  src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("../fonts/Gilroy/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Thin.eot");
+  src: local("Gilroy Thin"), local("Gilroy-Thin"), url("../fonts/Gilroy/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Black.eot");
+  src: local("Gilroy Black"), local("Gilroy-Black"), url("../fonts/Gilroy/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col1 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(8.3333333333% - 20px);
+}
+
+.col2 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(16.6666666667% - 20px);
+}
+
+.col2-4 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(20% - 20px);
+}
+
+.col3 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(25% - 20px);
+}
+
+.col4 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(33.3333333333% - 20px);
+}
+
+.col5 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(41.6666666667% - 20px);
+}
+
+.col6 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(50% - 20px);
+}
+
+.col7 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(58.3333333333% - 20px);
+}
+
+.col8 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(66.6666666667% - 20px);
+}
+
+.col9 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(75% - 20px);
+}
+
+.col10 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(83.3333333333% - 20px);
+}
+
+.col12 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+}
+
+.aligncenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center_block {
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/header_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+header .head_line {
+  background: rgba(0, 0, 0, 0.31);
+}
+
+header .head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 54px;
+}
+
+header .head__tel {
+  margin-right: 45px;
+}
+
+header .head__tel a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+header .head__social {
+  display: flex;
+}
+
+header .head__social .item {
+  margin-left: 20px;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu .logo a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 80px;
+  letter-spacing: 0.07em;
+  color: #ff9900;
+}
+
+header .menu nav ul {
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .menu nav li {
+  list-style: none;
+}
+
+header .menu nav a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 80px;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+header .menu nav a:hover {
+  color: #ff9900;
+  border-bottom: 3px solid #ff9900;
+  padding-bottom: 7px;
+  transition: all 0.3s;
+}
+
+header .menu .ordercall {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .menu .ordercall a {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ff9900;
+  padding: 8px 12px;
+  border: 2px solid #ff9900;
+  transition: all 0.3s;
+}
+
+header .menu .ordercall a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+header .baner {
+  margin: 0 auto;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 70vh;
+}
+
+header .baner h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+header .baner p {
+  padding: 30px 0 60px 0;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+header .baner .btn {
+  background: #ff9900;
+  box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+  padding: 11px;
+  color: #ffffff;
+  transition: all 0.3s;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header .baner .btn:hover {
+  transition: all 0.3s;
+  box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.897);
+}
+
+header .foot_line {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(26px);
+  padding: 30px 0;
+  margin-top: auto;
+}
+
+header .foot_line__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  min-height: 90px;
+}
+
+header .foot_line__item .text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  width: 90%;
+}
+
+header .foot_line .business {
+  background-image: url(../img/business.png);
+}
+
+header .foot_line .money-bag {
+  background-image: url(../img/money-bag.png);
+}
+
+header .foot_line .business-report {
+  background-image: url(../img/business-report.png);
+}
+
+header .foot_line .fast {
+  background-image: url(../img/fast.png);
+}
+
+header .foot_line .guarantee {
+  background-image: url(../img/guarantee.png);
+}
+
+header .menu-mobile {
+  display: none;
+}
+
+header .menu-mobile .topnav {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+header .menu-mobile .ordercall {
+  display: flex;
+  flex-direction: column;
+  min-height: 70px;
+  position: relative;
+}
+
+header .menu-mobile #myLinks {
+  display: none;
+  margin-top: 15px;
+}
+
+header .menu-mobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+header .menu-mobile a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header .menu-mobile .active {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ff9900;
+  padding: 8px 12px;
+  border: 2px solid #ff9900;
+  margin: 0 auto;
+}
+
+header .menu-mobile .active:hover {
+  background-color: rgba(221, 221, 221, 0);
+  color: #ff9900;
+}
+
+main .whoarewe-block {
+  background-image: url(../img/10years.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 50%;
+}
+
+main .whoarewe-block .container {
+  background-image: url(../img/two-bedroom-plan.png);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: 100% 260%;
+}
+
+main .whoarewe-block .text_block {
+  padding: 200px 0 250px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .whoarewe-block .subtitle {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ff9900;
+  text-transform: uppercase;
+}
+
+main .whoarewe-block .title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #000000;
+  padding: 10px 0 30px 0;
+}
+
+main .whoarewe-block .text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #7c7c7c;
+}
+
+main .stagesofwork {
+  z-index: -2;
+  background-color: #000000;
+}
+
+main .stagesofwork .subtitle {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #ff9900;
+  margin: 66px 0 30px 0;
+}
+
+main .stagesofwork .title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+main .stagesofwork .circle_wrapper {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+main .stagesofwork .circle_block {
+  width: 110px;
+  height: 110px;
+  margin: 100px auto;
+}
+
+main .stagesofwork .circle_block__text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  position: absolute;
+  top: 132px;
+  width: 152%;
+  left: -30px;
+}
+
+main .stagesofwork .prec {
+  top: 17px;
+  position: relative;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+main .stagesofwork .col12 {
+  z-index: 0;
+}
+
+main .stagesofwork .circle {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+main .stagesofwork .active-border {
+  position: relative;
+  text-align: center;
+  width: 116px;
+  height: 116px;
+  border-radius: 100%;
+  background-color: #ffb800;
+}
+
+main .stagesofwork .percent10 {
+  background-image: linear-gradient(162deg, transparent 50%, #ffffff 50%), linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+main .stagesofwork .percent20 {
+  background-image: linear-gradient(210deg, transparent 50%, #ffffff 50%), linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+main .stagesofwork .percent30 {
+  background-image: linear-gradient(266deg, transparent 50%, #ffffff 50%), linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+main .stagesofwork .percent40 {
+  background-image: linear-gradient(145deg, transparent 50%, #ffb800 50%), linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+main .stagesofwork .percent50 {
+  background-image: linear-gradient(216deg, transparent 50%, #ffb800 50%), linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+main .stagesofwork .line {
+  position: relative;
+}
+
+main .stagesofwork .line::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 185%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  right: 102%;
+  top: 50%;
+}
+
+main .stagesofwork .line_rigth {
+  position: relative;
+}
+
+main .stagesofwork .line_rigth::after {
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 185%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+
+main .stagesofwork .line_left {
+  position: relative;
+}
+
+main .ourworks {
+  background-image: url(../img/two-bedroom-plan2.png);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: 32% 134%;
+  margin-top: 100px;
+}
+
+main .ourworks span {
+  margin-left: 5px;
+}
+
+main .ourworks .subtitle {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #ff9900;
+}
+
+main .ourworks .title {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+main .ourworks .portfolio-slider h1 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+}
+
+main .ourworks .portfolio-slider p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+main .ourworks .portfolio-slider .repair-time,
+main .ourworks .portfolio-slider .square {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 139.4%;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+main .ourworks .portfolio-slider .repair-time span,
+main .ourworks .portfolio-slider .square span {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+main .ourworks .portfolio-slider .square {
+  margin-bottom: 20px;
+}
+
+main .ourworks .portfolio-slider .vertical-slider img {
+  width: 100px;
+  height: auto;
+}
+
+main .ourworks .portfolio-slider .navigate_panel {
+  height: 90px;
+  background: #ffb800;
+}
+
+main .ourworks .portfolio-slider .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+main .ourworks .portfolio-slider .splide__arrow {
+  top: auto;
+  bottom: -10px;
+  background: rgba(83, 6, 6, 0);
+}
+
+main .ourworks .portfolio-slider .splide__arrow svg {
+  fill: #ffffff;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+main .ourworks .portfolio-slider .splide__arrow--prev {
+  left: auto;
+  right: 100px;
+}
+
+main .ourworks .portfolio-slider .splide__arrow--next {
+  right: 50px;
+}
+
+main .ourworks .portfolio-slider .splide__pagination {
+  left: 70%;
+  bottom: 25px;
+  z-index: 0;
+}
+
+main .ourworks .portfolio-slider .splide__pagination button {
+  margin: 0 10px;
+}
+
+main .ourworks .portfolio-slider .splide__pagination__page {
+  background: #ffffff75;
+}
+
+main .ourworks .portfolio-slider .splide__pagination__page.is-active {
+  background: #ffffff;
+}
+
+main .aboutus {
+  background-image: url(../img/aboutus_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+main .aboutus_blur {
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(26px);
+  background-image: url(../img/quotes.png);
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
+}
+
+main .aboutus__subtitle {
+  margin-top: 70px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #ff9900;
+}
+
+main .aboutus__title {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  width: 75%;
+}
+
+main .aboutus__text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  width: 75%;
+  margin: 0 auto;
+}
+
+main .aboutus__name {
+  margin-top: 30px;
+  margin-bottom: 250px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+
+main .aboutus .splide__arrow {
+  top: auto;
+  bottom: 24px;
+  background: rgba(83, 6, 6, 0);
+}
+
+main .aboutus .splide__arrow svg {
+  fill: #ff9900;
+  width: 5em;
+  height: 5em;
+}
+
+main .aboutus .splide__arrow--prev {
+  left: 35%;
+}
+
+main .aboutus .splide__arrow--next {
+  right: 35%;
+}
+
+main .aboutus .splide__pagination {
+  bottom: 60px;
+  z-index: 0;
+}
+
+main .aboutus .splide__pagination button {
+  margin: 0 10px;
+}
+
+main .aboutus .splide__pagination__page.is-active {
+  background: #ff9900;
+}
+
+main .contactus {
+  background-color: #ffb800;
+  color: #ffffff;
+}
+
+main .contactus__title {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+main .contactus__subtitle {
+  margin-bottom: 40px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+}
+
+main .contactus input {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  color: rgba(255, 255, 255, 0.72);
+  padding-left: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 0.5px solid #ffffff;
+  margin-bottom: 40px;
+}
+
+main .contactus input::placeholder {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+main .contactus textarea:focus,
+main .contactus input:focus {
+  outline: none;
+}
+
+main .contactus #btn {
+  margin-left: 10px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffb800;
+  padding: 12px 25px;
+  background: #ffffff;
+}
+
+#sync1 .item {
+  background: #0c83e7;
+  padding: 80px 0px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#sync2 .item {
+  background: #c9c9c9;
+  padding: 10px 0px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sync2 .item h1 {
+  font-size: 18px;
+}
+
+#sync2 .current .item {
+  background: #0c83e7;
+}
+
+.owl-theme .owl-nav {
+  /*default owl-theme theme reset .disabled:hover links */
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  transition: all 0.3s ease;
+}
+
+.owl-theme .owl-nav [class*="owl-"].disabled:hover {
+  background-color: #d6d6d6;
+}
+
+#sync1.owl-theme {
+  position: relative;
+}
+
+#sync1.owl-theme .owl-next,
+#sync1.owl-theme .owl-prev {
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+
+#sync1.owl-theme .owl-prev {
+  left: 10px;
+}
+
+#sync1.owl-theme .owl-next {
+  right: 10px;
+}
+
+.footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #000000;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+.footer .block_align {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 0.07em;
+  color: #ff9900;
+  text-transform: uppercase;
+}
+
+.footer__text {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.7px;
+  color: #ffffff;
+}
+
+.footer nav li {
+  margin-bottom: 23px;
+  list-style: none;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.footer .block_adress {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.footer .block_adress .bold {
+  font-weight: bold;
+}
+
+.footer .footer_social {
+  text-align: right;
+}
+
+.footer .footer_social img {
+  opacity: 0.3;
+}
+
+.copyright {
+  background: #000000;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.29);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.29);
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col3 {
+    width: calc(100% - 20px);
+  }
+
+  .col6 {
+    width: calc(100% - 20px);
+  }
+
+  header .menu .logo {
+    text-align: center;
+  }
+
+  header .menu .ordercall {
+    justify-content: center;
+  }
+
+  main .whoarewe-block {
+    background-image: none;
+  }
+
+  main .whoarewe-block .container {
+    background-position: 100% -50%;
+  }
+
+  main .whoarewe-block .text_block {
+    padding: 150px 0 150px 0;
+  }
+
+  main .stagesofwork .circle_block__text {
+    top: 105px;
+    width: 116%;
+    left: -7px;
+  }
+
+  main .stagesofwork .prec {
+    font-size: 28px;
+  }
+
+  main .stagesofwork .circle {
+    top: 3px;
+    left: 3px;
+    width: 76px;
+    height: 76px;
+  }
+
+  main .stagesofwork .active-border {
+    width: 82px;
+    height: 82px;
+  }
+
+  main .ourworks {
+    background-position: 50% 25%;
+  }
+
+  main .aboutus .splide__pagination {
+    display: none;
+  }
+
+  main .contactus .col6 {
+    width: calc(50% - 20px);
+  }
+
+  .footer .col3 {
+    width: calc(25% - 20px);
+  }
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer .block_align {
+    margin-bottom: 70px;
+  }
+
+  .footer .footer_social {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col7 {
+    width: calc(100% - 20px);
+  }
+
+  main .aboutus__name {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  header {
+    height: auto;
+    background-size: auto;
+  }
+
+  header .head {
+    justify-content: center;
+  }
+
+  header .head__tel {
+    display: none;
+  }
+
+  header .head__social .item {
+    margin-right: 20px;
+  }
+
+  header .menu nav {
+    display: none;
+  }
+
+  header .menu .ordercall {
+    display: none;
+  }
+
+  header .baner {
+    height: auto;
+    width: 80%;
+  }
+
+  header .baner h1 {
+    font-size: 35px;
+  }
+
+  header .baner .btn {
+    margin-bottom: 100px;
+  }
+
+  header .foot_line {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  main .whoarewe-block .container {
+    background-position: 100% 0%;
+  }
+
+  main .whoarewe-block .text_block {
+    padding: 100px 0 100px 0;
+  }
+
+  main .stagesofwork .circle_wrapper {
+    display: block;
+  }
+
+  main .stagesofwork .circle_block__text {
+    top: 132px;
+    width: 152%;
+    left: -30px;
+  }
+
+  main .stagesofwork .prec {
+    font-size: 40px;
+  }
+
+  main .stagesofwork .circle {
+    top: 3px;
+    left: 3px;
+    width: 110px;
+    height: 110px;
+  }
+
+  main .stagesofwork .active-border {
+    width: 116px;
+    height: 116px;
+  }
+
+  main .stagesofwork .line::after {
+    display: none;
+  }
+
+  main .stagesofwork .line_rigth::after {
+    display: none;
+  }
+
+  main .ourworks .portfolio-slider .navigate_panel {
+    display: none;
+  }
+
+  main .ourworks .portfolio-slider .splide__pagination {
+    display: none;
+  }
+
+  .footer .col1 {
+    width: calc(50% - 20px);
+  }
+
+  .footer .col3 {
+    width: calc(50% - 20px);
+  }
+
+  .footer .col5 {
+    width: calc(50% - 20px);
+  }
+
+  .footer .footer_social {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  main .whoarewe-block .text_block {
+    padding: 30px 0 100px 0;
+  }
+
+  main .contactus .col6 {
+    width: calc(100% - 20px);
+  }
+}
